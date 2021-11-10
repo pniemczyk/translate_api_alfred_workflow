@@ -8,6 +8,12 @@ You need to create a Google Translate API access token to be able to use this wo
 
 [Download workflow](https://github.com/pniemczyk/translate_api_alfred_workflow/raw/main/Translate%20API.alfredworkflow)
 
+## Requirements
+
+- ruby (checked on version 3.0.2)
+- [Alfred](https://www.alfredapp.com/) with [Powerpack](https://www.alfredapp.com/powerpack/)
+- Google Translation API key
+
 ## Setup
 
 - [Global variables setup](https://v.usetapes.com/UyKRABRtC9)

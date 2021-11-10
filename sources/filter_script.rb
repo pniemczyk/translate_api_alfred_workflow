@@ -15,7 +15,7 @@ class AlfredResponseCollection
       item_builder(
         uid: target, 
         arg: text, 
-        title: text,
+        title: text || "#{target.upcase} language is not supported :(",
         subtitle: subtitle(target),
         icon: icon(target)
       )
@@ -99,7 +99,7 @@ class Translator
   end
 
   def extract_translation(response)
-    translations = JSON.parse(response.body)['data']['translations'] || [{}]
+    translations = JSON.parse(response.body).dig('data', 'translations') || [{}]
     translations.first['translatedText']
   end
 
