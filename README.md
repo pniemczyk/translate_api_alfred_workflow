@@ -13,9 +13,10 @@ You need to create a Google Translate API access token to be able to use this wo
 - [Global variables setup](https://v.usetapes.com/UyKRABRtC9)
 
 ### Global variables
-GT_API_KEY={your_google_translate_key}
-TARGETS={languages}
-SUBTITLE_ENABLED={when_contain_value_is_true}
+
+* GT_API_KEY={your_google_translate_key}
+* TARGETS={languages}
+* SUBTITLE_ENABLED={when_contain_value_is_true}
 
 > Example
 > ```
