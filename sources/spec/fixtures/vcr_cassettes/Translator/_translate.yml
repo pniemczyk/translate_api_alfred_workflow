@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://translation.googleapis.com/language/translate/v2?format=text&key=nice_try
+    body:
+      encoding: UTF-8
+      string: '{"q":"Szalony","target":"en"}'
+    headers:
+      Host:
+      - translation.googleapis.com
+      Content-Type:
+      - application/json; charset=utf-8
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Origin
+      - Referer
+      - X-Origin
+      Date:
+      - Thu, 11 Nov 2021 19:06:30 GMT
+      Server:
+      - ESF
+      Cache-Control:
+      - private
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443";
+        ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+          "data": {
+            "translations": [
+              {
+                "translatedText": "Insane",
+                "detectedSourceLanguage": "pl"
+              }
+            ]
+          }
+        }
+  recorded_at: Thu, 11 Nov 2021 19:06:30 GMT
+recorded_with: VCR 6.0.0

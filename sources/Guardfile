@@ -1,0 +1,11 @@
+# frozen_string_literal: true
+
+# directories %w[lib spec].select{ |d| Dir.exist?(d) ? d : UI.warning("Directory #{d} does not exist") }
+
+guard :rspec, cmd: 'rspec' do
+  watch(%r{^lib/(.+).rb$})      { |m| "spec/lib/#{m[1]}_spec.rb" }
+  watch(%r{^spec/(.+).rb$})     { |m| "spec/#{m[1]}.rb" }
+  watch(%r{^spec/lib/(.+).rb$}) { |m| "spec/lib/#{m[1]}.rb" }
+  watch('spec/spec_helper.rb')  { 'spec' }
+  watch('Gemfile')
+end
