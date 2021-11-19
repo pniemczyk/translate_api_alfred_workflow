@@ -6,6 +6,8 @@ You need to create a Google Translate API access token to be able to use this wo
 
 [Check it out](https://v.usetapes.com/B8R9VzzS86) this is a small presentation
 
+![Preview](https://github.com/pniemczyk/translate_api_alfred_workflow/blob/main/assets/images/preview.gif)
+
 [Download workflow](https://github.com/pniemczyk/translate_api_alfred_workflow/raw/main/Translate%20API.alfredworkflow)
 
 ## Requirements
